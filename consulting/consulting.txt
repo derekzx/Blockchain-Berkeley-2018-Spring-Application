@@ -1,0 +1,32 @@
+1.) Auto Part Supply Chain Tracking 
+
+At some dealerships around the world, Toyota has a problem with counterfeit auto parts entering the supply chain. A certified Toyota dealership in China may be repairing a car or replacing an old part with a new one, and they mistakenly use a counterfeit part that has come from one of several auto part suppliers in the country. That part becomes faulty and breaks within a few months of the car leaving the dealership, and Toyota or the dealership may need to pay for the repair and damages. 
+
+a.) What might a blockchain or decentralized ledger-based solution look like for the use case of tracking auto parts in the supply chain so that the dealer is confident in the part’s authenticity?
+
+b.) What are the challenges related to this use case?
+
+Hints: Consider security, tracking hardware, data storage, database participants, and other facets of this potential use case. Also, you may want to focus on building a case around only one auto component to develop a story and initial proof-of-concept/prototype for Toyota.
+
+
+a) 	Vision:
+	When an auto part, say a spark plug is manufactured in Toyota's factory, it will be given an identification number through an engraving or a sticker and an accompanying identifier will be generated on the blockchain. 
+	When the spark plug is moved down the supply chain from the manufacturer through different suppliers before it reaches the dealership, each and every transaction will require a smart contract to be executed before the recipient can receive the spark plug. The smart contract can function as a 'multi-signature' account where the transaction only occurs when both the supplier and recipient agrees that the transaction has occurred in real life.
+	When the spark plug finally reaches the dealership, the dealer will be able to verify whether the spark plug is genuine by easily checking its identity on the blockchain. He can further check the point of origin of the spark plug by seeing which factory it was manufactured in as this is already recorded on the blockchain.
+	For parts which are assembled from further smaller components this can be achieved by building a smart contract tree where the different original assets are referenced. For example, an engine (which is a complex part) will refer to its components such as the spark plugs, crank case etc.
+	
+	An interesting point would be a side-use case where we can track whether the part which the customer is using is actually a genuine auto-part when he returns to the repair shop for warranty. Since the auto-part identifier can be easily searched up on the blockchain, if the client owns the accompanying identifier on the blockchain the part must then be genuine.
+
+
+b) Challenges:
+1. Resistance to revamping current logistical systems
+	The software which is used to track the system will only be as good as the system which we transfer the hardware from one location to another. All dealerships and suppliers who are holding on to the stocks of Toyota parts will have to have personnel trained in reporting the new location of each part and updating the blockchain. There might also be resistance to the new methods of handling logistics if the dealerships prefer their old ways. This challenge can be overcome if Toyota creates an offer to send its own in-house personnel to train the dealerships' employees and install the software systems and infrastructure at each dealership. 
+	In terms of marketing to the dealership about the benefits of the new supply chain tracking system, the benefits - such as increased customer trust and cost savings - will need to be emphasized.
+
+2. Counterfeit & Tamper proof identification on auto-parts
+	The blockchain is only a ledger - it only records transactions on a identity and does not verify or issues identities. The verification of identities is especially important in this use case as a counterfeiter might produce a counterfeit auto-part if he has access to the blockchain. If a counterfeiter has a list of the identities of certain types of auto-parts he can label his own parts such that a dealer will be unable to distinguish between genuine Toyota auto-parts and counterfeit Toyota auto-parts.
+	To counter this challenge, Toyota can implement security measures such as brand security labels on its auto-parts which can include security threads or holographic images. This will ensure that the dealers will be able to easily verify whether an auto-part was produced by Toyota or a counterfeit manufacturer.
+
+3. Connectivity in Rural Areas
+	It is important to recognise that the internet infrastructure is not equally developed in different places around the world. Poor internet connectivity in rural areas especially where warehouses are stored will lead to both suppliers and recipients being unable to execute the smart contracts where the auto-parts are stored.
+	This can be overcome if Toyota implements an SMS service which will be able to convert received SMSs to online requests for the smart contract. Even though internet connectivity might not be developed in these places the telecommunications network should still provide basic services to these areas.
